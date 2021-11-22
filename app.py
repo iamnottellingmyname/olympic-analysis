@@ -7,7 +7,7 @@ import plotly.figure_factory as ff
 df=pd.read_csv(r'https://raw.githubusercontent.com/iamnottellingmyname/olympic-analysis/master/athlete_events.csv')
 region_df=pd.read_csv(r'https://raw.githubusercontent.com/iamnottellingmyname/olympic-analysis/master/noc_regions.csv')
 
-#st.sidebar.image("https://stillmed.olympics.com/media/Images/OlympicOrg/IOC/The_Organisation/The-Olympic-Rings/Olympic_rings_TM_c_IOC_All_rights_reserved_1.jpg?im=Resize=(1400,660),aspect=fill")
+st.sidebar.image("https://stillmed.olympics.com/media/Images/OlympicOrg/IOC/The_Organisation/The-Olympic-Rings/Olympic_rings_TM_c_IOC_All_rights_reserved_1.jpg?im=Resize=(600,250),aspect=fill")
 st.sidebar.title('Olympic Analysis')
 selected_season=st.sidebar.selectbox("Select Season",['Overall','Summer','Winter'])
 df=preprocessor.preprocess(df,region_df,selected_season)
