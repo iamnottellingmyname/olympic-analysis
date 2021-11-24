@@ -107,7 +107,7 @@ elif user_menu=='Country wise Analysis':
 
 else:
     age_dist=calculations.get_age_distribution(df)
-    st.title("Distribution of Age")
+    st.title("Average Distribution of Age")
     fig7=ff.create_distplot(age_dist[0] ,age_dist[1],show_hist=False, show_rug=False)
     fig7.update_layout(autosize=False,width=720, height=500)
     st.plotly_chart(fig7)
