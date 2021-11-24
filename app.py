@@ -130,6 +130,6 @@ else:
 
     st.markdown("***")
     st.title("Men vs Women Participation")
-    m_vs_w=calculations.men_vs_women(df)
+    m_vs_w=calculations.men_vs_women(df,current_sport)
     fig10=px.line(m_vs_w, 'Year', ['Male', 'Female'],width=720, height=500)
     st.plotly_chart(fig10)
